@@ -1,0 +1,20 @@
+.langChangeButton{
+  display: none;
+}
+.langChangeButton:checked + label{
+  background-color: skyblue;
+}
+label{
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 2px 2px;
+  width: 55px;
+  height: 25px;
+  text-align: center;
+}
+#langJa:not(:checked) ~ :lang(ja){
+  display: none;
+}
+#langEn:not(:checked) ~ :lang(en){
+  display: none;
+}
